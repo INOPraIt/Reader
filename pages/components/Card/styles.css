@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.containerC {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 5px 300px;
+  margin-left: 4%;
+}
+
+.itemC1 {
+  background-color: rgba(0, 255, 255, 0);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.itemC2 {
+  background-color: rgba(179, 255, 0, 0);
+}
+
+.itemC3 {
+  background-color: rgba(254, 254, 8, 0);
+}
+
+/* Text component */
+
+.textHeaderC {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+}
+
+.commentC {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+}
+
+.headerGenC {
+  width: 570px;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.textPostC {
+  width: 580px;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: 15px;
+}
+
+/* Block component */
+
+.block1C {
+  display: flex;
+}
+
+.blocNameThemeC {
+  margin-left: 10px;
+}
+
+/* Additional component */
+
+.lineC {
+  width: 95%;
+  border: none;
+  height: 1px;
+  background-color: rgb(208, 208, 208);
+}
+
+.imgPostC {
+  width: 360px;
+  height: 220px;
+  margin-left: 70px;
+  margin-top: 38px;
+  border-radius: 10px;
+}
+
+.imgC {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 15px;
+}
