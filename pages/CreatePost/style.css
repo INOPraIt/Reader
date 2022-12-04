@@ -121,6 +121,10 @@
 
 }
 
+.imgPostCP {
+  width: 400px;
+}
+
 /* Input */
 
 .inpNameCP {
@@ -236,12 +240,26 @@
   z-index: -10;
 }
 
+.inpLinkCP {
+  width: 672px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgb(193, 193, 193);
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
 /* Btn */
 
 .btnCreatePost {
   transition: 0.3s;
   margin-top: 15px;
-  width: 672px;
+  width: 683px;
   font-size: 20px;
   height: 35px;
   border-radius: 10px;
@@ -253,7 +271,7 @@
 .btnCreatePost:hover {
   transition: 0.3s;
   margin-top: 15px;
-  width: 672px;
+  width: 683px;
   font-size: 20px;
   height: 35px;
   border-radius: 10px;

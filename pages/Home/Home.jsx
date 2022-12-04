@@ -5,11 +5,7 @@ import People from '../components/People/People';
 import './style.css';
 
 export default function Home() {
-  // const Posts = [
-  //   {id: 1, name: 'dima', message: 'dawdwadwadwa', firstname: 'ryzhev', subtopic: 'la la la', topic: 'post'},
-  //   {id: 2, name: 'alex', message: 'dawdwadwadwa', firstname: 'awde', subtopic: 'net net net', topic: 'post'},
-  //   {id: 3, name: 'gosha', message: 'dawdwadwadwa', firstname: 'rdawd', subtopic: 'da da da', topic: 'post'},
-  // ]
+  const [search, setSearch] = React.useState('');
 
   return (
     <div className='container'>
@@ -34,10 +30,6 @@ export default function Home() {
       <div className='item2'>
         <div className='containerContent'>
           <div className='blockContentOne'>
-            <input
-              className='searchInp'
-              placeholder='Search'
-            />
             <h2 className='headerPosts'>
               Browse Posts:
             </h2>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const CardPost = ({ name, firstname, subtopic, topic, message }) => {
+const CardPost = ({ name, firstname, subtopic, topic, message, img }) => {
   return (
     <div className='containerC'>
       <div className='itemC1'>
@@ -29,7 +29,7 @@ const CardPost = ({ name, firstname, subtopic, topic, message }) => {
       <div className='itemC3'>
         <img
           className='imgPostC'
-          src='https://images.wallpaperscraft.ru/image/single/dzhojstik_kontroller_gejmpad_126439_1280x720.jpg'
+          src={img}
         />
       </div>
     </div>
