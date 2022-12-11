@@ -226,3 +226,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: 150px 650px;
 }
+
+@media screen and (max-width: 1600px) {
+  .item3 {
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: none;
+  }
+
+  .item2 {
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}

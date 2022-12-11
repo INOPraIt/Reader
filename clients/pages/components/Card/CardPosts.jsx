@@ -12,6 +12,7 @@ const CardPosts = ({ syncPosts }) => {
     topic={post.topic}
     message={post.message}
     img={post.img}
+    id={post.id}
     key={post.id}
   />
 )}

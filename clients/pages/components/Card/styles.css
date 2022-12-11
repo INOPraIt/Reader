@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.containerC {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 5px 300px;
+  margin-left: 4%;
+}
+
+.itemC1 {
+  background-color: rgba(0, 255, 255, 0);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.itemC2 {
+  background-color: rgba(179, 255, 0, 0);
+}
+
+.itemC3 {
+  background-color: rgba(254, 254, 8, 0);
+}
+
+/* Text component */
+
+.textHeaderC {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+}
+
+.commentC {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+}
+
+.headerGenC {
+  width: 570px;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.textPostC {
+  width: 580px;
+  margin-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: 15px;
+}
+
+/* Block component */
+
+.block1C {
+  display: flex;
+}
+
+.blocNameThemeC {
+  margin-left: 10px;
+}
+
+.btnBlockCardPost {
+  display: flex;
+}
+
+/* Additional component */
+
+.lineC {
+  width: 95%;
+  border: none;
+  height: 1px;
+  background-color: rgb(208, 208, 208);
+}
+
+.imgPostC {
+  width: 360px;
+  height: 220px;
+  margin-left: 70px;
+  margin-top: 38px;
+  border-radius: 10px;
+}
+
+.imgC {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 15px;
+}
+
+/* Btn */
+
+.editorCardPost {
+  transition: 0.4s;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 102, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 102, 255);
+}
+
+.editorCardPost:hover {
+  transition: 0.4s;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 102, 255);
+  background-color: rgb(0, 102, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.deletingCardPost {
+  transition: 0.4s;
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid rgb(210, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(210, 0, 0);
+}
+
+.deletingCardPost:hover {
+  transition: 0.4s;
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(210, 0, 0);
+  background-color: rgb(210, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* media */
+
+@media screen and (max-width: 1800px) {
+  .imgPostC {
+    width: 360px;
+    height: 220px;
+    margin-left: 0px;
+    margin-top: 38px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .imgPostC {
+    width: 360px;
+    height: 220px;
+    margin-top: 38px;
+    margin-right: 54px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .lineC {
+    width: 95%;
+    border: none;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+  }
+
+  .itemC1 {
+    background-color: rgba(0, 255, 255, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .itemC3 {
+    background-color: rgba(254, 254, 8, 0);
+  }
+
+  .imgPostC {
+    width: 360px;
+    height: 220px;
+    margin-left: 100px;
+    margin-top: 38px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .containerC {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 5px 300px 300px;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+  }
+  
+  .itemC1 {
+    background-color: rgba(0, 255, 255, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .itemC2 {
+    background-color: rgba(179, 255, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  
+  .itemC3 {
+    background-color: rgba(254, 254, 8, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+  }
+  
+  .imgPostC {
+    width: 560px;
+    height: 320px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .lineC {
+    width: 99%;
+    border: none;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+  }
+
+  .editorCardPost {
+    display: none;
+  }
+  
+  .deletingCardPost {
+    display: none;
+  }
+
+  .block1C {
+    display: block;
+  }
+
+  .commentC {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+  }
+
+  .headerGenC {
+    width: 890px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .textPostC {
+    width: 690px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    margin-left: 100px;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .containerC {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 5px 300px 300px;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+  }
+  
+  .itemC1 {
+    background-color: rgba(0, 255, 255, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .itemC2 {
+    background-color: rgba(179, 255, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  
+  .itemC3 {
+    background-color: rgba(254, 254, 8, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+  }
+  
+  .imgPostC {
+    width: 560px;
+    height: 320px;
+    margin-left: 55px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .lineC {
+    width: 99%;
+    border: none;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+  }
+
+  .editorCardPost {
+    display: none;
+  }
+  
+  .deletingCardPost {
+    display: none;
+  }
+
+  .block1C {
+    display: block;
+  }
+
+  .commentC {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+  }
+
+  .headerGenC {
+    width: 665px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .textPostC {
+    width: 590px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    margin-left: 40px;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .containerC {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 5px 300px 300px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  
+  .itemC1 {
+    background-color: rgba(123, 72, 139, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .itemC2 {
+    background-color: rgba(179, 255, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  
+  .itemC3 {
+    background-color: rgba(254, 254, 8, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+  }
+
+  .imgPostC {
+    width: 400px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .lineC {
+    width: 83%;
+    border: none;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+  }
+
+  .editorCardPost {
+    display: none;
+  }
+  
+  .deletingCardPost {
+    display: none;
+  }
+
+  .textPostC {
+    width: 430px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  
+  .headerGenC {
+    width: 490px;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .lineC {
+    width: 99%;
+    border: none;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+  } 
+
+  .block1C {
+    display: block;
+  }
+}

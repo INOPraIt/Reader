@@ -280,3 +280,155 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
+
+/* Media screen */
+
+@media screen and (max-width: 1320px) {
+  .blockOneCP {
+    margin-left: 27%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .blockOneCP {
+    margin-left: 21%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .blockOneCP {
+    margin-left: 16%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .blockOneCP {
+    margin-left: 3%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .inpNameCP {
+    border: 1px solid rgb(225, 225, 225);
+    outline: none;
+    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+  }
+  
+  .inpFirstnameCP {
+    border: 1px solid rgb(225, 225, 225);
+    outline: none;
+    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+  }
+  
+  .inpSubtopicPC {
+    border: 1px solid rgb(225, 225, 225);
+    outline: none;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+  }
+  
+  .inpTopicCP {
+    border: 1px solid rgb(225, 225, 225);
+    outline: none;
+    margin-top: 10px;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+  
+  .textareaCP {
+    border: 1px solid rgb(225, 225, 225);
+    margin-top: 10px;
+    outline: none;
+    resize: none;
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 30px;
+  }
+
+  .blockOneCP {
+    margin-left: 1px;
+    margin-top: 40px;
+
+  }
+
+  .avatarChangeCreate {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    border-radius: 40px;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .inpLinkCP {
+    width: 600px;
+    height: 40px;
+    margin-left: 30px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(193, 193, 193);
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .btnCreatePost {
+    transition: 0.3s;
+    margin-top: 15px;
+    width: 600px;
+    margin-left: 30px;
+    font-size: 20px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 128, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 128, 255);
+  }
+
+}

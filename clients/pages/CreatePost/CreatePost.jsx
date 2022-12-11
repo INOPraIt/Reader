@@ -1,13 +1,10 @@
 import React from 'react';
 import './style.css';
 import { connect } from 'react-redux';
-import { createPost } from '../../redux/reducers/actions';
+import { createPost } from '../../redux/actions/post.action';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import gg from '../../public'
-
-const hostUrl = 'http://localhost:5000/upload';
 
 const CreatePost = (props) => {
   const [name, setName] = React.useState('');
@@ -33,17 +30,20 @@ const CreatePost = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
+    let id = Date.now().toString();
+
     const newPost = {
       name,
       firstname,
       subtopic,
       topic,
       message,
-      img
+      img,
+      id
     }
     console.log(newPost);
 
-    props.createPost(newPost)
+    props.createPost(newPost);
   }
 
   return (
@@ -70,7 +70,8 @@ const CreatePost = (props) => {
               <div className='avatarChangeCreate'>
                 <img
                   className='imgCPd'
-                  src='https://phonoteka.org/uploads/posts/2021-07/thumbs/1625650098_56-phonoteka-org-p-sokol-art-krasivo-58.jpg' />
+                  src='https://phonoteka.org/uploads/posts/2021-07/thumbs/1625650098_56-phonoteka-org-p-sokol-art-krasivo-58.jpg' 
+                />
               </div>
               <input
                 placeholder='Name'
@@ -107,6 +108,7 @@ const CreatePost = (props) => {
                 placeholder='The meaning of the post'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                maxlength="450"
               />
             </div>
             <div>
@@ -138,40 +140,6 @@ const CreatePost = (props) => {
           </form>
         </div>
       </div>
-      <div>
-        <h2 className='textHeaderOnePC'>This is what your post will look like:</h2>
-      </div>
-      <div className='containerCP'>
-        <div className='itemC1P'>
-          <hr className='lineCP' />
-        </div>
-        <div className='itemC2P'>
-          <div className='block1CP'>
-            <img
-              className='imgCP'
-              src='https://phonoteka.org/uploads/posts/2021-07/thumbs/1625650098_56-phonoteka-org-p-sokol-art-krasivo-58.jpg' />
-            <div className='blocNameThemeCP'>
-              <h5 className='textHeaderCP'>{name} {firstname}</h5>
-              <p className='commentCP'>
-                {subtopic}
-              </p>
-            </div>
-          </div>
-          <h2 className='headerGenCP'>
-            {topic}
-          </h2>
-          <p className='textPostCP'>
-            {message}
-          </p>
-        </div>
-        <div className='itemC3P'>
-          <img 
-            className={'imgPostCP'}
-            alt={"img"}
-            src={img}
-          />
-        </div>
-      </div>
     </div>
   )
 }
@@ -180,4 +148,4 @@ const mapDispatchToProps = {
   createPost: createPost
 }
 
-export default connect(null, mapDispatchToProps)(CreatePost)
+export default connect(null, mapDispatchToProps)(CreatePost);
